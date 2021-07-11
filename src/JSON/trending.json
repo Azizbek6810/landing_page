@@ -1,0 +1,42 @@
+[
+    {
+        "img": "/img2.jpg",
+        "name": "Nike Court Air",
+        "price": "$58"
+    },
+    {
+        "img": "/img1.jpg",
+        "name": "Nike Court Air 1",
+        "price": "$58"
+    },
+    {
+        "img": "/img4.jpg",
+        "name": "Nike Court Air 2",
+        "price": "$58"
+    },
+    {
+        "img": "/img5.jpg",
+        "name": "Nike Court Air 3",
+        "price": "$58"
+    },
+    {
+        "img": "/img2.jpg",
+        "name": "Nike Court Air",
+        "price": "$58"
+    },
+    {
+        "img": "/img1.jpg",
+        "name": "Nike Court Air 1",
+        "price": "$58"
+    },
+    {
+        "img": "/img4.jpg",
+        "name": "Nike Court Air 2",
+        "price": "$58"
+    },
+    {
+        "img": "/img5.jpg",
+        "name": "Nike Court Air 3",
+        "price": "$58"
+    }
+]

@@ -1,0 +1,1357 @@
+@mixin paddingSections {
+  padding: 30px 0 30px;
+}
+
+@media screen and (max-width: 1024px) {
+  body {
+    padding-right: 0 !important;
+  }
+  .modal-body {
+    .searchSec {
+      form {
+        position: relative;
+        .searchInput {
+          width: 410px;
+          padding: 5px;
+          border-radius: 5px;
+          border: 1px solid #808080;
+          &:focus {
+            outline: none;
+            box-shadow: none;
+          }
+        }
+        .searchBtn {
+          position: absolute;
+          top: 5%;
+          background-color: transparent !important;
+          border: none;
+        }
+      }
+    }
+  }
+  .navigation {
+    padding: 0 20px;
+    border-bottom: 1px solid rgb(230, 230, 230);
+    .responsivemodal {
+      display: none;
+    }
+    .searchSec {
+      margin: 0;
+    }
+  }
+  .categories {
+    display: inline;
+    padding: 0;
+    #responsiveIcon {
+      display: none;
+    }
+    .categories_button {
+      display: flex;
+      margin: 15px 15px 0;
+      background-color: #fff;
+      button {
+        background-color: rgb(204, 204, 204);
+      }
+      .dropdown-toggle {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        &::after {
+          margin-left: 10px;
+        }
+      }
+      .dropdown-menu.show {
+        width: 100%;
+      }
+    }
+    .links {
+      display: flex;
+      padding: 10px 0;
+      flex-wrap: wrap;
+    }
+  }
+  .home {
+    height: 325px;
+    background-position: center;
+    .main {
+      display: flex;
+      justify-content: space-between;
+      .side1 {
+        margin: 0;
+        padding: 50px 20px;
+        h3 {
+          font-size: 25px;
+        }
+        p {
+          font-size: 15px;
+        }
+        .buttons {
+          .button1 {
+            //a tag
+            padding: 7px;
+            font-size: 15px;
+          }
+        }
+      }
+      .side2 {
+        height: 320px !important;
+        img {
+          width: 326px !important;
+          height: 325px !important;
+        }
+      }
+    }
+  }
+  .smartwatch {
+    @include paddingSections();
+    .titles {
+      p {
+        font-size: 15px;
+      }
+      h4 {
+        font-size: 20px;
+      }
+    }
+    .cards {
+      .productCard {
+        img {
+          width: 100%;
+        }
+        .price {
+          transform: translate(50px, 0);
+        }
+      }
+    }
+    .buttonArea {
+      .exploreBtn {
+        padding: 10px 15px;
+      }
+    }
+  }
+  .ads {
+    background-position: center;
+    height: 150px;
+    .contents {
+      padding: 30px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .aboutText {
+        font-size: 25px;
+      }
+      .shopping {
+        display: flex;
+        justify-content: center;
+        a {
+          padding: 10px 30px;
+        }
+      }
+    }
+  }
+  .newcollec {
+    @include paddingSections();
+    .cardsAREA {
+      //col-md-12
+      .row {
+        .cards {
+          //col-md-6
+          padding: 0 10px;
+          width: 50% !important;
+          .card {
+            //card
+            margin: 10px !important;
+            text-align: center;
+            background-color: #f5f5f5 !important;
+            .card-body {
+              img {
+                width: 65% !important;
+              }
+            }
+          }
+        }
+      }
+    }
+    .col-md-12 {
+      .card {
+        margin: 20px;
+        .card-body {
+          img {
+            width: 90%;
+          }
+        }
+      }
+      .buttonArea {
+        .exploreButton {
+          @include paddingSections();
+        }
+      }
+    }
+  }
+  .trending {
+    @include paddingSections();
+    .trendingCards {
+      .newcol {
+        width: 25% !important;
+        .card {
+          .card-header {
+            img {
+              width: 100% !important;
+            }
+          }
+          .card-body {
+            .infoTitle {
+              .price {
+                padding: 5px 15px !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .footer {
+    @include paddingSections();
+    .row {
+      align-items: center;
+      .col-md-4 {
+        display: flex;
+        justify-content: space-around;
+        .products {
+          margin: 0 40px;
+          .sampleText {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    padding-right: 0 !important;
+  }
+  .modal-body {
+    .searchSec {
+      form {
+        position: relative;
+        .searchInput {
+          width: 410px;
+          padding: 5px;
+          border-radius: 5px;
+          border: 1px solid #808080;
+          &:focus {
+            outline: none;
+            box-shadow: none;
+          }
+        }
+        .searchBtn {
+          position: absolute;
+          top: 5%;
+          background-color: transparent !important;
+          border: none;
+        }
+      }
+    }
+  }
+  .navigation {
+    padding: 0 20px;
+    border-bottom: 1px solid rgb(230, 230, 230);
+    .responsivemodal {
+      display: block;
+      .btn {
+        background-color: transparent !important;
+        color: #000 !important;
+        border: none !important;
+      }
+    }
+    .searchSec {
+      display: none;
+    }
+    .icons {
+      display: none;
+    }
+  }
+  .categories {
+    display: inline;
+    padding: 0;
+    #responsiveIcon {
+      display: block;
+      .icons {
+        a {
+          margin: 0 20px 0 0;
+        }
+      }
+    }
+    .categories_button {
+      display: flex;
+      margin: 15px 15px 0;
+      background-color: #fff;
+      button {
+        background-color: rgb(204, 204, 204);
+      }
+      .dropdown-toggle {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        &::after {
+          margin-left: 10px;
+        }
+      }
+      .dropdown-menu.show {
+        width: 100%;
+      }
+    }
+    .links {
+      display: flex;
+      padding: 10px 0;
+      flex-wrap: wrap;
+    }
+  }
+  .home {
+    background-position: center;
+    .main {
+      .side1 {
+        margin: 0;
+        padding: 50px 20px;
+        h3 {
+          font-size: 25px;
+        }
+        p {
+          font-size: 15px;
+        }
+        .buttons {
+          .button1 {
+            //a tag
+            padding: 7px;
+            font-size: 15px;
+          }
+        }
+      }
+      .side2 {
+        height: 320px !important;
+        img {
+          width: 326px !important;
+          height: 320px !important;
+        }
+      }
+    }
+  }
+  .smartwatch {
+    @include paddingSections();
+    .titles {
+      p {
+        font-size: 15px;
+      }
+      h4 {
+        font-size: 20px;
+      }
+    }
+    .cards {
+      .productCard {
+        img {
+          width: 100%;
+        }
+        .price {
+          transform: translate(50px, 0);
+        }
+      }
+    }
+    .buttonArea {
+      .exploreBtn {
+        padding: 10px 15px;
+      }
+    }
+  }
+  .ads {
+    background-position: center;
+    height: 150px;
+    .contents {
+      padding: 30px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .aboutText {
+        font-size: 25px;
+      }
+      .shopping {
+        display: flex;
+        justify-content: center;
+        a {
+          padding: 10px 30px;
+        }
+      }
+    }
+  }
+  .newcollec {
+    @include paddingSections();
+    .cardsAREA {
+      //col-md-12
+      .row {
+        .cards {
+          //col-md-6
+          padding: 0 10px;
+          width: 50% !important;
+          .card {
+            //card
+            margin: 10px !important;
+            text-align: center;
+            background-color: #f5f5f5 !important;
+            .card-body {
+              img {
+                width: 65% !important;
+              }
+            }
+          }
+        }
+      }
+    }
+    .col-md-12 {
+      .card {
+        margin: 20px;
+        .card-body {
+          img {
+            width: 90%;
+          }
+        }
+      }
+      .buttonArea {
+        .exploreButton {
+          @include paddingSections();
+        }
+      }
+    }
+  }
+  .trending {
+    @include paddingSections();
+    .trendingCards {
+      .newcol {
+        width: 50% !important;
+        .card {
+          .card-header {
+            img {
+              width: 100% !important;
+            }
+          }
+          .card-body {
+            .infoTitle {
+              .price {
+                padding: 5px 15px !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .footer {
+    @include paddingSections();
+    .row {
+      align-items: center;
+      .col-md-4 {
+        display: flex;
+        justify-content: space-around;
+        .products {
+          margin: 0 20px;
+          .sampleText {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 501px) {
+  body {
+    padding-right: 0 !important;
+  }
+  .modal-body {
+    .searchSec {
+      form {
+        position: relative;
+        .searchInput {
+          width: 390px;
+          padding: 5px;
+          border-radius: 5px;
+          border: 1px solid #808080;
+          &:focus {
+            outline: none;
+            box-shadow: none;
+          }
+        }
+        .searchBtn {
+          position: absolute;
+          top: 5%;
+          background-color: transparent !important;
+          border: none;
+        }
+      }
+    }
+  }
+  .navigation {
+    padding: 0 20px;
+    border-bottom: 1px solid rgb(230, 230, 230);
+    .responsivemodal {
+      display: block;
+      .btn {
+        background-color: transparent !important;
+        color: #000 !important;
+        border: none !important;
+      }
+    }
+    .searchSec {
+      display: none;
+    }
+    .icons {
+      display: none;
+    }
+  }
+  .categories {
+    display: inline;
+    padding: 0;
+    #responsiveIcon {
+      display: block;
+      .icons {
+        a {
+          margin: 0 20px 0 0;
+        }
+      }
+    }
+    .categories_button {
+      display: flex;
+      margin: 15px 15px 0;
+      background-color: #fff;
+      button {
+        background-color: rgb(204, 204, 204);
+      }
+      .dropdown-toggle {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        &::after {
+          margin-left: 10px;
+        }
+      }
+      .dropdown-menu.show {
+        width: 100%;
+      }
+    }
+    .links {
+      display: flex;
+      padding: 10px 0;
+      flex-wrap: wrap;
+    }
+  }
+  .home {
+    height: 20rem;
+    background-position: center;
+    .main {
+      display: inline;
+      .side1 {
+        margin: 0;
+        padding: 70px 10px;
+        h3 {
+          font-size: 30px;
+        }
+        p {
+          font-size: 15px;
+        }
+        .buttons {
+          .button1 {
+            //a tag
+            padding: 15px;
+            font-size: 15px;
+          }
+        }
+      }
+      .side2 {
+        display: none;
+      }
+    }
+  }
+  .smartwatch {
+    @include paddingSections();
+    .titles {
+      p {
+        font-size: 15px;
+      }
+      h4 {
+        font-size: 20px;
+      }
+    }
+    .cards {
+      display: inline-block;
+      .productCard {
+        padding: 10px 125px;
+        img {
+          width: 85%;
+        }
+        .price {
+          transform: translate(90px, 0);
+        }
+      }
+    }
+    .buttonArea {
+      .exploreBtn {
+        padding: 10px 15px;
+      }
+    }
+  }
+  .ads {
+    background-position: center;
+    height: 200px;
+    .contents {
+      display: inline-block;
+      padding: 30px;
+      .aboutText {
+        font-size: 25px;
+        width: 100%;
+        text-align: center;
+      }
+      .shopping {
+        display: flex;
+        justify-content: center;
+        a {
+          padding: 10px 30px;
+        }
+      }
+    }
+  }
+  .newcollec {
+    @include paddingSections();
+    .cardsAREA {
+      //col-md-12
+      .row {
+        .cards {
+          //col-md-6
+          .card {
+            //card
+            margin: 30px !important;
+            text-align: center;
+            background-color: #f5f5f5 !important;
+            .card-body {
+              img {
+                width: 65% !important;
+              }
+            }
+          }
+        }
+      }
+    }
+    .col-md-12 {
+      .card {
+        margin: 20px;
+        .card-body {
+          img {
+            width: 90%;
+          }
+        }
+      }
+      .buttonArea {
+        .exploreButton {
+          @include paddingSections();
+        }
+      }
+    }
+  }
+  .trending {
+    @include paddingSections();
+    .trendingCards {
+      .newcol {
+        width: 100% !important;
+        .card {
+          margin: 0 30px;
+          .card-header {
+            img {
+              width: 65% !important;
+            }
+          }
+        }
+      }
+    }
+  }
+  .footer {
+    @include paddingSections();
+    .col-md-4 {
+      display: block;
+      .products {
+        margin: 25px 0;
+        .sampleText {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 414px) {
+  body {
+    padding-right: 0 !important;
+  }
+  .modal-body {
+    .searchSec {
+      form {
+        position: relative;
+        .searchInput {
+          width: 310px;
+          padding: 5px;
+          border-radius: 5px;
+          border: 1px solid #808080;
+          &:focus {
+            outline: none;
+            box-shadow: none;
+          }
+        }
+        .searchBtn {
+          position: absolute;
+          top: 5%;
+          background-color: transparent !important;
+          border: none;
+        }
+      }
+    }
+  }
+  .navigation {
+    padding: 0 20px;
+    border-bottom: 1px solid rgb(230, 230, 230);
+    .responsivemodal {
+      display: block;
+      .btn {
+        background-color: transparent !important;
+        color: #000 !important;
+        border: none !important;
+      }
+    }
+    .searchSec {
+      display: none;
+    }
+    .icons {
+      display: none;
+    }
+  }
+  .categories {
+    display: inline;
+    padding: 0;
+    #responsiveIcon {
+      display: block;
+      .icons {
+        a {
+          margin: 0 20px 0 0;
+        }
+      }
+    }
+    .categories_button {
+      display: flex;
+      margin: 15px 15px 0;
+      background-color: #fff;
+      button {
+        background-color: rgb(204, 204, 204);
+      }
+      .dropdown-toggle {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        &::after {
+          margin-left: 10px;
+        }
+      }
+      .dropdown-menu.show {
+        width: 100%;
+      }
+    }
+    .links {
+      display: flex;
+      padding: 10px 0;
+      flex-wrap: wrap;
+    }
+  }
+  .home {
+    height: 20rem;
+    background-position: center;
+    .main {
+      display: inline;
+      .side1 {
+        margin: 0;
+        padding: 60px 10px;
+        h3 {
+          font-size: 25px;
+        }
+        p {
+          font-size: 15px;
+        }
+        .buttons {
+          .button1 {
+            //a tag
+            padding: 10px;
+            font-size: 15px;
+          }
+        }
+      }
+      .side2 {
+        display: none;
+      }
+    }
+  }
+  .smartwatch {
+    @include paddingSections();
+    .titles {
+      p {
+        font-size: 15px;
+      }
+      h4 {
+        font-size: 20px;
+      }
+    }
+    .cards {
+      display: inline-block;
+      .productCard {
+        padding: 10px 70px;
+        img {
+          width: 85%;
+        }
+        .price {
+          transform: translate(100px, 0);
+        }
+      }
+    }
+    .buttonArea {
+      .exploreBtn {
+        padding: 10px 15px;
+      }
+    }
+  }
+  .ads {
+    background-position: center;
+    height: 230px;
+    .contents {
+      display: inline-block;
+      padding: 30px;
+      .aboutText {
+        font-size: 25px;
+        width: 100%;
+        text-align: center;
+      }
+      .shopping {
+        display: flex;
+        justify-content: center;
+        a {
+          padding: 10px 30px;
+        }
+      }
+    }
+  }
+  .newcollec {
+    @include paddingSections();
+    .cardsAREA {
+      //col-md-12
+      .row {
+        .cards {
+          //col-md-6
+          .card {
+            //card
+            margin: 10px !important;
+            text-align: center;
+            background-color: #f5f5f5 !important;
+            .card-body {
+              img {
+                width: 85% !important;
+              }
+            }
+          }
+        }
+      }
+    }
+    .col-md-12 {
+      .card {
+        padding: 12px;
+        .card-body {
+          img {
+            width: 100%;
+          }
+        }
+      }
+      .buttonArea {
+        .exploreButton {
+          @include paddingSections();
+        }
+      }
+    }
+  }
+  .trending {
+    @include paddingSections();
+    .trendingCards {
+      .newcol {
+        width: 100% !important;
+        .card {
+          width: 100%;
+          margin: 10px;
+          .card-header {
+            img {
+              width: 75% !important;
+            }
+          }
+        }
+      }
+    }
+  }
+  .footer {
+    @include paddingSections();
+    .col-md-4 {
+      display: block;
+      .products {
+        margin: 25px 0;
+        .sampleText {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  body {
+    padding-right: 0 !important;
+  }
+  .modal-body {
+    .searchSec {
+      form {
+        position: relative;
+        .searchInput {
+          width: 270px;
+          padding: 5px;
+          border-radius: 5px;
+          border: 1px solid #808080;
+          &:focus {
+            outline: none;
+            box-shadow: none;
+          }
+        }
+        .searchBtn {
+          position: absolute;
+          top: 5%;
+          background-color: transparent !important;
+          border: none;
+        }
+      }
+    }
+  }
+  .navigation {
+    padding: 0 20px;
+    border-bottom: 1px solid rgb(230, 230, 230);
+    .responsivemodal {
+      display: block;
+
+      .btn {
+        background-color: transparent !important;
+        color: #000 !important;
+        border: none !important;
+      }
+    }
+    .searchSec {
+      display: none;
+    }
+    .icons {
+      display: none;
+    }
+  }
+  .categories {
+    display: inline;
+    padding: 0;
+    #responsiveIcon {
+      display: block;
+      .icons {
+        a {
+          margin: 0 20px 0 0;
+        }
+      }
+    }
+    .categories_button {
+      display: flex;
+      margin: 15px 15px 0;
+      background-color: #fff;
+      button {
+        background-color: rgb(204, 204, 204);
+      }
+      .dropdown-toggle {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        &::after {
+          margin-left: 10px;
+        }
+      }
+      .dropdown-menu.show {
+        width: 100%;
+      }
+    }
+    .links {
+      display: flex;
+      padding: 10px 0;
+      flex-wrap: wrap;
+    }
+  }
+  .home {
+    height: 20rem;
+    background-position: center;
+    .main {
+      display: inline;
+      .side1 {
+        margin: 0;
+        padding: 60px 10px;
+        h3 {
+          font-size: 25px;
+        }
+        p {
+          font-size: 15px;
+        }
+        .buttons {
+          .button1 {
+            //a tag
+            padding: 7px;
+            font-size: 15px;
+          }
+        }
+      }
+      .side2 {
+        display: none;
+      }
+    }
+  }
+  .smartwatch {
+    @include paddingSections();
+    .titles {
+      p {
+        font-size: 15px;
+      }
+      h4 {
+        font-size: 20px;
+      }
+    }
+    .cards {
+      display: inline-block;
+      .productCard {
+        padding: 10px 55px;
+        img {
+          width: 85%;
+        }
+        .price {
+          transform: translate(100px, 0);
+        }
+      }
+    }
+    .buttonArea {
+      .exploreBtn {
+        padding: 10px 15px;
+      }
+    }
+  }
+  .ads {
+    background-position: center;
+    height: 200px;
+    .contents {
+      display: inline-block;
+      padding: 30px;
+      .aboutText {
+        font-size: 25px;
+        width: 100%;
+        text-align: center;
+      }
+      .shopping {
+        display: flex;
+        justify-content: center;
+        a {
+          padding: 10px 30px;
+        }
+      }
+    }
+  }
+  .newcollec {
+    @include paddingSections();
+    .cardsAREA {
+      //col-md-12
+      .row {
+        .cards {
+          //col-md-6
+          .card {
+            //card
+            margin: 20px !important;
+            text-align: center;
+            background-color: #f5f5f5 !important;
+            .card-body {
+              img {
+                width: 75% !important;
+              }
+            }
+          }
+        }
+      }
+    }
+    .col-md-12 {
+      .card {
+        padding: 20px;
+        .card-body {
+          img {
+            width: 100%;
+          }
+        }
+      }
+      .buttonArea {
+        .exploreButton {
+          @include paddingSections();
+        }
+      }
+    }
+  }
+  .trending {
+    @include paddingSections();
+    .trendingCards {
+      .newcol {
+        width: 100% !important;
+        .card {
+          margin: 20px;
+          .card-header {
+            img {
+              width: 75% !important;
+            }
+          }
+        }
+      }
+    }
+  }
+  .footer {
+    @include paddingSections();
+    .col-md-4 {
+      display: block;
+      .products {
+        margin: 25px 0;
+        .sampleText {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 330px) {
+  body {
+    padding-right: 0 !important;
+  }
+  .modal-body {
+    .searchSec {
+      form {
+        position: relative;
+        .searchInput {
+          width: 230px;
+          padding: 5px;
+          border-radius: 5px;
+          border: 1px solid #808080;
+          &:focus {
+            outline: none;
+            box-shadow: none;
+          }
+        }
+        .searchBtn {
+          position: absolute;
+          top: 5%;
+          background-color: transparent !important;
+          border: none;
+        }
+      }
+    }
+  }
+  .navigation {
+    padding: 0 20px;
+    border-bottom: 1px solid rgb(230, 230, 230);
+    .responsivemodal {
+      display: block;
+      .btn {
+        background-color: transparent !important;
+        color: #000 !important;
+        border: none !important;
+      }
+    }
+    .searchSec {
+      display: none;
+    }
+    .icons {
+      display: none;
+    }
+  }
+  .categories {
+    display: inline;
+    padding: 0;
+    #responsiveIcon {
+      display: block;
+      .icons {
+        a {
+          margin: 0 20px 0 0;
+        }
+      }
+    }
+    .categories_button {
+      display: flex;
+      margin: 15px 15px 0;
+      background-color: #fff;
+      button {
+        background-color: rgb(204, 204, 204);
+      }
+      .dropdown-toggle {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        &::after {
+          margin-left: 10px;
+        }
+      }
+      .dropdown-menu.show {
+        width: 100%;
+      }
+    }
+    .links {
+      display: flex;
+      padding: 10px 0;
+      flex-wrap: wrap;
+    }
+  }
+  .home {
+    height: 20rem;
+    background-position: center;
+    .main {
+      display: inline;
+      .side1 {
+        margin: 0;
+        padding: 60px 10px;
+        h3 {
+          font-size: 25px;
+        }
+        p {
+          font-size: 15px;
+        }
+        .buttons {
+          .button1 {
+            //a tag
+            padding: 7px;
+            font-size: 15px;
+          }
+        }
+      }
+      .side2 {
+        display: none;
+      }
+    }
+  }
+  .smartwatch {
+    @include paddingSections();
+    .titles {
+      p {
+        font-size: 15px;
+      }
+      h4 {
+        font-size: 20px;
+      }
+    }
+    .cards {
+      display: inline-block;
+      .productCard {
+        padding: 10px 50px;
+        img {
+          width: 85%;
+        }
+        .price {
+          transform: translate(80px, 0);
+        }
+      }
+    }
+    .buttonArea {
+      .exploreBtn {
+        padding: 10px 15px;
+      }
+    }
+  }
+  .ads {
+    background-position: center;
+    height: 230px;
+    .contents {
+      display: inline-block;
+      padding: 30px;
+      .aboutText {
+        font-size: 25px;
+        width: 100%;
+        text-align: center;
+      }
+      .shopping {
+        display: flex;
+        justify-content: center;
+        a {
+          padding: 10px 30px;
+        }
+      }
+    }
+  }
+  .newcollec {
+    @include paddingSections();
+    .cardsAREA {
+      //col-md-12
+      .row {
+        .cards {
+          //col-md-6
+          .card {
+            //card
+            margin: 10px !important;
+            text-align: center;
+            background-color: #f5f5f5 !important;
+            .card-body {
+              img {
+                width: 90% !important;
+              }
+            }
+          }
+        }
+      }
+    }
+    .col-md-12 {
+      .card {
+        padding: 12px;
+        .card-body {
+          img {
+            width: 100%;
+          }
+        }
+      }
+      .buttonArea {
+        .exploreButton {
+          @include paddingSections();
+        }
+      }
+    }
+  }
+  .trending {
+    @include paddingSections();
+    .trendingCards {
+      .newcol{
+        width: 100% !important;
+        .card {
+          margin: 10px;
+          .card-header {
+            img {
+              width: 90%;
+            }
+          }
+        }
+      }
+    }
+  }
+  .footer {
+    @include paddingSections();
+    .col-md-4 {
+      display: block;
+      .products {
+        margin: 25px 0;
+        .sampleText {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
